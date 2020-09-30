@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
-//google trad key AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
 
 const Convert = ({ text, language }) => {
   const [translated, setTranslated] = useState("");
@@ -23,7 +22,7 @@ const Convert = ({ text, language }) => {
           params: {
             q: debouncedText,
             target: language.value,
-            key: "AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM",
+            key: "YOUR KEY",
           },
         }
       );
